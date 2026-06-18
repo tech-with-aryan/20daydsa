@@ -10,15 +10,12 @@ int main()
     char fruits[n][50];
     char chunks[2 * n][50];
     int k = 0;
-
-    // Input fruits
     for (int i = 0; i < n; i++)
     {
         printf("Enter fruit %d: ", i + 1);
         scanf("%s", fruits[i]);
     }
 
-    // Split fruits into chunks
     for (int i = 0; i < n; i++)
     {
         int len = strlen(fruits[i]);
@@ -34,8 +31,6 @@ int main()
         strcpy(chunks[k++], left);
         strcpy(chunks[k++], right);
     }
-
-    // Sort chunks alphabetically
     for (int i = 0; i < k - 1; i++)
     {
         for (int j = i + 1; j < k; j++)
