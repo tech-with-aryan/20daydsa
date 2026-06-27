@@ -50,8 +50,6 @@ int main()
         {
             if (strcmp(temp->data, ptr->data) > 0)
             {
-                strcpy(str, temp->data);
-                strcpy(temp->data, ptr->data);
                 strcpy(ptr->data, str);
             }
         }
