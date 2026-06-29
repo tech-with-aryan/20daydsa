@@ -47,7 +47,7 @@ int main()
         }
     }
 
-    // Selection Sort
+
     for (i = head; i->next != head; i = i->next)
     {
         min = i;
